@@ -222,10 +222,10 @@ export default function Home() {
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 text-center">
-              Logs View
+              Create Project
             </h3>
             <p className="text-gray-600 text-center">
-              Real-time logs and monitoring
+              Spin-up a new PocketBase instance
             </p>
           </div>
         </div>
