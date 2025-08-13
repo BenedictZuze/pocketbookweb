@@ -1,102 +1,266 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Github,
+  Database,
+  Play,
+  Hash,
+  Monitor,
+  Activity,
+  Users,
+} from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 py-20 text-center">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-8 animate-fade-in-up">
+            <Badge
+              variant="secondary"
+              className="mb-4 bg-blue-100 text-blue-700 hover:bg-blue-200"
+            >
+              Open Source • Tauri App
+            </Badge>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
+              Pocket<span className="text-blue-600">book</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+              A desktop manager for your PocketBase instances
+            </p>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="animate-fade-in-up animation-delay-200">
+            <Button
+              size="lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <Github className="mr-2 h-5 w-5" />
+              View on GitHub
+            </Button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* About Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            Why Pocketbook?
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-8">
+            Managing multiple PocketBase instances can be complex and
+            time-consuming. Pocketbook simplifies this process by providing a
+            unified desktop interface to create, manage, and monitor all your
+            PocketBase instances from one place.
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Built with Tauri for maximum performance and cross-platform
+            compatibility, Pocketbook brings the power of modern desktop
+            applications to PocketBase management.
+          </p>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Powerful Features
+          </h2>
+          <p className="text-lg text-gray-600">
+            Everything you need to manage your PocketBase instances efficiently
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <Card className="border-blue-100 hover:border-blue-200 transition-colors duration-300 hover:shadow-lg">
+            <CardHeader>
+              <Database className="h-10 w-10 text-blue-600 mb-4" />
+              <CardTitle className="text-xl">
+                Sidecar-embedded PocketBase
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-gray-600">
+                Built-in PocketBase integration that runs alongside your
+                application for seamless management.
+              </CardDescription>
+            </CardContent>
+          </Card>
+
+          <Card className="border-blue-100 hover:border-blue-200 transition-colors duration-300 hover:shadow-lg">
+            <CardHeader>
+              <Play className="h-10 w-10 text-blue-600 mb-4" />
+              <CardTitle className="text-xl">Start/Stop Instances</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-gray-600">
+                Easily control your PocketBase instances with simple start and
+                stop commands from the GUI.
+              </CardDescription>
+            </CardContent>
+          </Card>
+
+          <Card className="border-blue-100 hover:border-blue-200 transition-colors duration-300 hover:shadow-lg">
+            <CardHeader>
+              <Hash className="h-10 w-10 text-blue-600 mb-4" />
+              <CardTitle className="text-xl">Auto Port Assignment</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-gray-600">
+                Automatic port management prevents conflicts and ensures smooth
+                operation of multiple instances.
+              </CardDescription>
+            </CardContent>
+          </Card>
+
+          <Card className="border-blue-100 hover:border-blue-200 transition-colors duration-300 hover:shadow-lg">
+            <CardHeader>
+              <Monitor className="h-10 w-10 text-blue-600 mb-4" />
+              <CardTitle className="text-xl">GUI Management</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-gray-600">
+                Intuitive graphical interface for managing all aspects of your
+                PocketBase instances.
+              </CardDescription>
+            </CardContent>
+          </Card>
+
+          <Card className="border-blue-100 hover:border-blue-200 transition-colors duration-300 hover:shadow-lg">
+            <CardHeader>
+              <Activity className="h-10 w-10 text-blue-600 mb-4" />
+              <CardTitle className="text-xl">Health Checks</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-gray-600">
+                Real-time monitoring and health checks to ensure your instances
+                are running optimally.
+              </CardDescription>
+            </CardContent>
+          </Card>
+
+          <Card className="border-blue-100 hover:border-blue-200 transition-colors duration-300 hover:shadow-lg">
+            <CardHeader>
+              <Users className="h-10 w-10 text-blue-600 mb-4" />
+              <CardTitle className="text-xl">
+                Master Instance Management
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-gray-600">
+                Uses a master PocketBase instance to coordinate and manage all
+                other instances efficiently.
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Screenshots Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            App Screenshots
+          </h2>
+          <p className="text-lg text-gray-600">
+            Take a look at Pocketbook's clean and intuitive interface
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="space-y-4">
+            <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
+              <img
+                src="/pocketbase-dashboard.png"
+                alt="Dashboard view showing multiple PocketBase instances"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 text-center">
+              Dashboard
+            </h3>
+            <p className="text-gray-600 text-center">
+              Overview of all your PocketBase instances
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
+              <img
+                src="/project-details-config.png"
+                alt="Project details page with configuration options"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 text-center">
+              Project Details
+            </h3>
+            <p className="text-gray-600 text-center">
+              Detailed configuration and management
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
+              <img
+                src="/real-time-logs-dashboard.png"
+                alt="Logs view showing real-time monitoring data"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 text-center">
+              Logs View
+            </h3>
+            <p className="text-gray-600 text-center">
+              Real-time logs and monitoring
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Footer */}
+      <section className="bg-blue-600 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Get Started?
+          </h2>
+          <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+            Pocketbook is open source and welcomes contributions from the
+            community. Join us in making PocketBase management easier for
+            everyone.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg rounded-xl"
+            >
+              <Github className="mr-2 h-5 w-5" />
+              View on GitHub
+            </Button>
+            <p className="text-blue-200">PRs welcome • MIT License</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-50 py-8">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-gray-600">
+            Built with ❤️ using Tauri • Open Source • Community Driven
+          </p>
+        </div>
       </footer>
     </div>
   );
