@@ -253,8 +253,10 @@ export default function Home() {
               variant="secondary"
               className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg rounded-xl"
             >
-              <Github className="mr-2 h-5 w-5" />
-              View on GitHub
+              <a href="https://github.com/BenedictZuze/pocketbook">
+                <Github className="mr-2 h-5 w-5" />
+                View on GitHub
+              </a>
             </Button>
             <p className="text-blue-200">PRs welcome • MIT License</p>
           </div>
