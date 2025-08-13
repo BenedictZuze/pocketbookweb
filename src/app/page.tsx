@@ -40,13 +40,18 @@ export default function Home() {
           </div>
 
           <div className="animate-fade-in-up animation-delay-200">
-            <Button
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+            <a
+              href="https://github.com/BenedictZuze/pocketbook"
+              target="_blank"
             >
-              <Github className="mr-2 h-5 w-5" />
-              View on GitHub
-            </Button>
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Github className="mr-2 h-5 w-5" />
+                View on GitHub
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -248,16 +253,19 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              variant="secondary"
-              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg rounded-xl"
+            <a
+              href="https://github.com/BenedictZuze/pocketbook"
+              target="_blank"
             >
-              <a href="https://github.com/BenedictZuze/pocketbook">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg rounded-xl"
+              >
                 <Github className="mr-2 h-5 w-5" />
                 View on GitHub
-              </a>
-            </Button>
+              </Button>
+            </a>
             <p className="text-blue-200">PRs welcome • MIT License</p>
           </div>
         </div>
