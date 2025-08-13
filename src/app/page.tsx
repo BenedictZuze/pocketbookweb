@@ -215,7 +215,7 @@ export default function Home() {
             <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
               <Image
                 src="/create.png"
-                alt="Logs view showing real-time monitoring data"
+                alt="New project page to run new pocketbase instances"
                 className="w-full h-full object-cover rounded-lg"
                 width={100}
                 height={100}
