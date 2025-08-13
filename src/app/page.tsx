@@ -181,10 +181,12 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="space-y-4">
             <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
-              <img
+              <Image
                 src="/dashboard.png"
                 alt="Dashboard view showing multiple PocketBase instances"
                 className="w-full h-full object-cover rounded-lg"
+                width={100}
+                height={100}
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 text-center">
@@ -197,10 +199,12 @@ export default function Home() {
 
           <div className="space-y-4">
             <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
-              <img
+              <Image
                 src="/details.png"
                 alt="Project details page with configuration options"
                 className="w-full h-full object-cover rounded-lg"
+                width={100}
+                height={100}
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 text-center">
