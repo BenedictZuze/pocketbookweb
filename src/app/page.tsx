@@ -16,6 +16,7 @@ import {
   Activity,
   Users,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -212,10 +213,12 @@ export default function Home() {
 
           <div className="space-y-4">
             <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
-              <img
+              <Image
                 src="/real-time-logs-dashboard.png"
                 alt="Logs view showing real-time monitoring data"
                 className="w-full h-full object-cover rounded-lg"
+                width={100}
+                height={100}
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 text-center">
