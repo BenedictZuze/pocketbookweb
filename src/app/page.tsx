@@ -182,7 +182,7 @@ export default function Home() {
           <div className="space-y-4">
             <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
               <img
-                src="/pocketbase-dashboard.png"
+                src="/dashboard.png"
                 alt="Dashboard view showing multiple PocketBase instances"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -198,7 +198,7 @@ export default function Home() {
           <div className="space-y-4">
             <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
               <img
-                src="/project-details-config.png"
+                src="/details.png"
                 alt="Project details page with configuration options"
                 className="w-full h-full object-cover rounded-lg"
               />
@@ -214,7 +214,7 @@ export default function Home() {
           <div className="space-y-4">
             <div className="aspect-video bg-gradient-to-br from-blue-100 to-blue-50 rounded-xl border-2 border-blue-200 flex items-center justify-center">
               <Image
-                src="/real-time-logs-dashboard.png"
+                src="/create.png"
                 alt="Logs view showing real-time monitoring data"
                 className="w-full h-full object-cover rounded-lg"
                 width={100}
